@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import com.example.javierdiaz.demooxcom.R;
+import com.example.javierdiaz.demooxcom.beans.DataApp;
 import com.example.javierdiaz.demooxcom.beans.DatosApp;
 import com.example.javierdiaz.demooxcom.beans.LineaTerapeutica;
 import com.example.javierdiaz.demooxcom.databinding.ActivityLogInBinding;
@@ -35,8 +36,8 @@ public class LoginActivity extends BaseActivity {
             Log.i("JSON",obj.toString());
 
             Gson gson = new Gson();
-            Type listType = new TypeToken<LineaTerapeutica>(){}.getType();
-            DatosApp mDatosApp = gson.fromJson(obj.toString(), listType);
+            Type listType = new TypeToken<DataApp>(){}.getType();
+            DataApp mDatosApp = gson.fromJson(obj.toString(), listType);
             Log.i("PARSE",mDatosApp.toString());
         } catch (JSONException e) {
             e.printStackTrace();

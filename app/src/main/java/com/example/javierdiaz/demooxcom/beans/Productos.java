@@ -2,6 +2,7 @@ package com.example.javierdiaz.demooxcom.beans;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Javier on 12/11/2017.
@@ -10,7 +11,7 @@ public class Productos implements Serializable {
 
     String foto;
     String nombreProducto;
-    ArrayList<Grado> efectoAdverso;
+    EfectoAdverso efectoAdverso;
 
     public Productos() {
     }
@@ -31,11 +32,11 @@ public class Productos implements Serializable {
         this.nombreProducto = nombreProducto;
     }
 
-    public ArrayList<Grado> getEfectoAdverso() {
+    public EfectoAdverso getEfectoAdverso() {
         return efectoAdverso;
     }
 
-    public void setEfectoAdverso(ArrayList<Grado> efectoAdverso) {
+    public void setEfectoAdverso(EfectoAdverso efectoAdverso) {
         this.efectoAdverso = efectoAdverso;
     }
 }
