@@ -1,0 +1,80 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="minimal_padding_top">10dp</dimen>
+    <dimen name="geralPadding">12dp</dimen>
+    <dimen name="dimen_height_app_bar_on_boarding">60dp</dimen>
+
+    <dimen name="dimen_padding_top_bottom_edittext">5dp</dimen>
+    <dimen name="dimen_width_edittext_large">360dp</dimen>
+    <dimen name="dimen_width_edittext_medium">245dp</dimen>
+    <dimen name="dimen_width_edittext_small">150dp</dimen>
+
+    <dimen name="dimen_width_button_large">360dp</dimen>
+    <dimen name="dimen_width_button_medium">240dp</dimen>
+    <dimen name="dimen_width_button_small">150dp</dimen>
+
+    <dimen name="dimen_fab_xhdpi_center">90dp</dimen>
+    <dimen name="dimen_fab_xhdpi_center_icon">67dp</dimen>
+    <dimen name="dimen_fab_xhdpi_default">45dp</dimen>
+    <dimen name="dimen_fab_xhdpi_giant">100dp</dimen>
+    <dimen name="dimen_fab_xhdpi_mini">34dp</dimen>
+
+    <dimen name="dimen_padding_button_top_bottom">18dp</dimen>
+    <dimen name="paddingTitleTop">60dp</dimen>
+    <dimen name="paddingEndStart">32dp</dimen>
+    <dimen name="paddingTopBottomButton">10dp</dimen>
+    <dimen name="paddingTopBottomView">84sp</dimen>
+    <dimen name="dimen_margin_top_text_below_icon">24dp</dimen>
+
+
+    <dimen name="dimen_height_item_medium">42dp</dimen>
+    <dimen name="dimen_height_item_error">37dp</dimen>
+
+
+    <dimen name="text_gral_title">18sp</dimen>
+    <dimen name="text_gral_content_size">18sp</dimen>
+    <dimen name="text_size_edittext">16sp</dimen>
+    <dimen name="dimen_text_size_button">16sp</dimen>
+
+
+    <dimen name="dimen_icon_energy_bar">20dp</dimen>
+    <dimen name="text_size_energy_value">18sp</dimen>
+
+    <dimen name="text_size_x1">24sp</dimen>
+    <dimen name="text_size_x2">20sp</dimen>
+    <dimen name="text_size_x3">20sp</dimen>
+
+    <dimen name="dimen_width_progress_bar">135dp</dimen>
+    <dimen name="dimen_heigth_progress_bar">10dp</dimen>
+
+    <!-- Dialog Values -->
+    <dimen name="dialog_title_size">23sp</dimen>
+    <dimen name="dialog_msg_size">15sp</dimen>
+    <dimen name="dialog_button_text_size">21sp</dimen>
+    <dimen name="margin_top_host">190dp</dimen>
+    <dimen name="min_height_dialog">440dp</dimen>
+    <dimen name="margin_top_msg1">30dp</dimen>
+    <dimen name="padding_msg1">15dp</dimen>
+
+    <dimen name="dimen_margin_top_button">10dp</dimen>
+    <dimen name="dimen_margin_bottom_button">50dp</dimen>
+    <dimen name="dimen_margin_left_button">40dp</dimen>
+    <dimen name="dimen_margin_right_button">40dp</dimen>
+    <dimen name="dimen_forgot_pwd_size">180dp</dimen>
+
+    <dimen name="dimen_icon_login_width_height">100dp</dimen>
+    <dimen name="dimen_padding_between_items">12dp</dimen>
+    <dimen name="dimen_margin_text_below_mainicon">16dp</dimen>
+    <dimen name="margin_bottom_error">8dp</dimen>
+    <dimen name="margin_error_x_icon">2dp</dimen>
+    <dimen name="padding_error_x_icon">12dp</dimen>
+    <dimen name="margin_space_between_buttons">15dp</dimen>
+    <dimen name="margin_text_label_Item_blu">10dp</dimen>
+    <dimen name="dimen_fab_app_bar">30dp</dimen>
+</resources>

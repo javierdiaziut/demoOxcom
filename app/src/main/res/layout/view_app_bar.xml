@@ -1,0 +1,67 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_height_app_bar_on_boarding">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_height_app_bar_on_boarding"
+            android:scaleType="centerCrop"
+            android:src="@color/md_white_1000" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBackButton"
+            style="@style/fabThemeAppBar"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            app:backgroundTint="@color/colodBackgroundWhite" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/md_black_1000" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/fabBackButton">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/ic_roche"
+                android:background="@android:color/transparent" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/key_amount"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="0"-->
+            <!---->
+            <!--android:textSize="@dimen/key_amount_size"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/md_white_1000"-->
+            <!--android:background="@drawable/current_waypoint"-->
+            <!--/>-->
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+</layout>

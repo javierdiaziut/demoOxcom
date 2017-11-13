@@ -1,0 +1,156 @@
+{
+	"datosApp": {
+		"lineaTerapeutica": [{
+			"nombreLinea": "Oncologia",
+			"Productos": [{
+				"foto": "imgProducto/01.jpg",
+				"nombreProducto": "AVASTIN",
+				"efectoAdverso": {
+					"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 2,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}, {
+							"orden": 3,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 4,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}
+					]
+
+				}
+			}]
+
+		}, {
+			"nombreLinea": "Virologia",
+			"Productos": [{
+				"foto": "imgProducto/01.jpg",
+				"nombreProducto": "AVASTIN",
+				"efectoAdverso": {
+					"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 2,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}, {
+							"orden": 3,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 4,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}
+					]
+
+				}
+			}]
+
+		}, {
+			"nombreLinea": "Inflamacion",
+			"Productos": [{
+				"foto": "imgProducto/01.jpg",
+				"nombreProducto": "AVASTIN",
+				"efectoAdverso": {
+					"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 2,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}, {
+							"orden": 3,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 4,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}
+					]
+
+				}
+			}]
+
+		}, {
+			"nombreLinea": "Enfermedades Metabolicas",
+			"Productos": [{
+				"foto": "imgProducto/01.jpg",
+				"nombreProducto": "AVASTIN",
+				"efectoAdverso": {
+					"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 2,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}, {
+							"orden": 3,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 4,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}
+					]
+
+				}
+			}]
+
+		}, {
+			"nombreLinea": "Sistema nervioso Central",
+			"Productos": [{
+				"foto": "imgProducto/01.jpg",
+				"nombreProducto": "AVASTIN",
+				"efectoAdverso": {
+					"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 2,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}, {
+							"orden": 3,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 4,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}
+					]
+
+				}
+			}]
+
+		}]
+
+	}
+}

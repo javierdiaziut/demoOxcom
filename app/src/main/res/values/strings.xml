@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Oxcom</string>
+    <!--Login-->
+    <string name="bienvenido">Bienvenido</string>
+    <string name="usuario">Usuario</string>
+    <string name="pass">Password</string>
+    <string name="guia">GUÍA</string>
+    <string name="efectos_adversos">EFECTOS ADVERSOS</string>
+    <string name="recuperar_contraseña"><u>Recuperar contraseña</u></string>
+    <string name="solicitar_acceso"><u>Solicitar Acceso</u></string>
+    <string name="conectar">Conectar</string>
+
+    <!--Guia de efectos adversos-->
+
+    <string name="linea_terapeutica">Linea Terapéutica</string>
+    <string name="title_guia_efectos_adversos">Guia de efectos adversos</string>
+    <string name="lorem_ipsum">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</string>
+</resources>

@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="GralTextWithShadow" parent="@android:style/TextAppearance">
+        <!--<item name="android:shadowRadius">5</item>-->
+        <!--<item name="android:shadowDy">5</item>-->
+        <!--<item name="android:shadowColor">@color/colorShadowGralLetter</item>-->
+        <item name="android:textColor">@color/generalTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="GralLabelWithShadow.x2" parent="GralTextWithShadow">
+        <item name="android:textSize">@dimen/text_size_x2</item>
+    </style>
+
+    <style name="GralEditTextTheme">
+        <!--<item name="android:layout_height">@dimen/dimen_height_item_medium</item>-->
+        <item name="android:background">@drawable/edittext_rounded_corners</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">@dimen/dimen_padding_top_bottom_edittext</item>
+        <item name="android:paddingBottom">@dimen/dimen_padding_top_bottom_edittext</item>
+        <item name="android:paddingStart">@dimen/geralPadding</item>
+        <item name="android:paddingEnd">@dimen/geralPadding</item>
+        <item name="android:textSize">@dimen/text_size_x3</item>
+    </style>
+
+    <style name="GralbtnTheme">
+        <!--<item name="android:layout_height">@dimen/dimen_height_item_medium</item>-->
+        <item name="android:background">@drawable/btn_blue_roundedcorners</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">@dimen/dimen_padding_top_bottom_edittext</item>
+        <item name="android:paddingBottom">@dimen/dimen_padding_top_bottom_edittext</item>
+        <item name="android:paddingStart">@dimen/geralPadding</item>
+        <item name="android:paddingEnd">@dimen/geralPadding</item>
+        <item name="android:textSize">@dimen/text_size_x3</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+    </style>
+
+    <style name="GralButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/edittext_rounded_corners</item>
+        <item name="android:textSize">@dimen/dimen_text_size_button</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <!--<item name="android:background">@drawable/button_rounded_border_blue</item>-->
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="GralButtonStyle.Large" parent="GralButtonStyle">
+        <item name="android:layout_width">@dimen/dimen_width_button_medium</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimen_padding_button_top_bottom</item>
+        <item name="android:paddingTop">@dimen/dimen_padding_button_top_bottom</item>
+    </style>
+
+    <style name="fabThemeAppBar">
+        <item name="android:layout_width">@dimen/dimen_fab_app_bar</item>
+        <item name="android:layout_height">@dimen/dimen_fab_app_bar</item>
+    </style>
+
+</resources>
