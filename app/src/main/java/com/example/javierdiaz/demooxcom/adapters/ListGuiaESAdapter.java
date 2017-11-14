@@ -13,15 +13,17 @@ import android.widget.TextView;
 
 import com.example.javierdiaz.demooxcom.R;
 
+import java.util.ArrayList;
+
 /**
  * Created by SinAsignarT1 on 05/11/2017.
  */
 
 public class ListGuiaESAdapter extends ArrayAdapter<String> {
     private final Context context;
-    private final String[] values;
+    private final ArrayList<String> values;
 
-    public ListGuiaESAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull String[] objects) {
+    public ListGuiaESAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<String> objects) {
         super(context, resource, objects);
         this.context = context;
         this.values = objects;
@@ -35,13 +37,13 @@ public class ListGuiaESAdapter extends ArrayAdapter<String> {
         View rowView = inflater.inflate(R.layout.item_guia_es, parent, false);
 
         TextView textView = (TextView) rowView.findViewById(R.id.textView_guia_es);
-        textView.setText(values[position]);
+        textView.setText(values.get(position));
 
         return rowView;
     }
 
     @Override
     public int getCount() {
-        return values.length;
+        return values.size();
     }
 }

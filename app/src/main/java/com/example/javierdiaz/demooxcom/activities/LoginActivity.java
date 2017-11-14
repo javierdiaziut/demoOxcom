@@ -25,6 +25,8 @@ import java.util.List;
 
 public class LoginActivity extends BaseActivity {
     ActivityLogInBinding binding;
+    public static DataApp mDatosApp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +35,10 @@ public class LoginActivity extends BaseActivity {
 
         try {
             JSONObject obj = new JSONObject(loadJSONFromAsset());
-            Log.i("JSON",obj.toString());
 
             Gson gson = new Gson();
             Type listType = new TypeToken<DataApp>(){}.getType();
-            DataApp mDatosApp = gson.fromJson(obj.toString(), listType);
-            Log.i("PARSE",mDatosApp.toString());
+            mDatosApp = gson.fromJson(obj.toString(), listType);
         } catch (JSONException e) {
             e.printStackTrace();
         }

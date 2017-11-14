@@ -28,7 +28,139 @@
 					]
 
 				}
-			}]
+			},{
+				"foto": "imgProducto/01.jpg",
+				"nombreProducto": "HEPCERTIN",
+				"efectoAdverso": {
+					"grado": [{
+						"orden": 1,
+						"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+						"manejo": "Continuar con Avastin® No se requiere intervención"
+					},
+						{
+							"orden": 2,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}, {
+							"orden": 3,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+						{
+							"orden": 4,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						}
+					]
+
+				}
+			},
+				{
+					"foto": "imgProducto/01.jpg",
+					"nombreProducto": "MABTHERA",
+					"efectoAdverso": {
+						"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+							{
+								"orden": 2,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}, {
+								"orden": 3,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							},
+							{
+								"orden": 4,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}
+						]
+
+					}
+				},{
+					"foto": "imgProducto/01.jpg",
+					"nombreProducto": "PERJETA",
+					"efectoAdverso": {
+						"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+							{
+								"orden": 2,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}, {
+								"orden": 3,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							},
+							{
+								"orden": 4,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}
+						]
+
+					}
+				},{
+					"foto": "imgProducto/01.jpg",
+					"nombreProducto": "TARCEVA",
+					"efectoAdverso": {
+						"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+							{
+								"orden": 2,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}, {
+								"orden": 3,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							},
+							{
+								"orden": 4,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}
+						]
+
+					}
+				},{
+					"foto": "imgProducto/01.jpg",
+					"nombreProducto": "XELODA",
+					"efectoAdverso": {
+						"grado": [{
+							"orden": 1,
+							"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+							"manejo": "Continuar con Avastin® No se requiere intervención"
+						},
+							{
+								"orden": 2,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}, {
+								"orden": 3,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							},
+							{
+								"orden": 4,
+								"criterio": " Asintomática, incremento transitorio del DBP en > 20 mmHg o BP > 150/100 150/100 mmHg",
+								"manejo": "Continuar con Avastin® No se requiere intervención"
+							}
+						]
+
+					}
+				}
+			]
 
 		}, {
 			"nombreLinea": "Virologia",

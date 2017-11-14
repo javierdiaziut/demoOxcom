@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.teravision.unicef.kidpower.activities.GuiaEfectosAdversosActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:id="@+id/includedAppBarTitle"
+            layout="@layout/view_app_bar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textTitleLinea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/includedAppBarTitle"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <ListView
+            android:id="@+id/list_linea_terapeutica"
+            android:layout_below="@+id/textTitleLinea"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="200dp"></ListView>
+
+        <TextView
+            android:id="@+id/textAreaGuiaEfectos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_linea_terapeutica"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/lorem_ipsum" />
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_btn_color"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</layout>
