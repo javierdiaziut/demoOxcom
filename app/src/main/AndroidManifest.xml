@@ -23,10 +23,10 @@
         <activity
             android:name=".activities.GuiaEfectosAdversosActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".activities.LineaTerapeuticaActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.DetalleMedicinaActivity"></activity>
     </application>
 
 </manifest>
