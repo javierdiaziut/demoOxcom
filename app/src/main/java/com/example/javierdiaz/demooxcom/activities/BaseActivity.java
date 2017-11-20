@@ -10,7 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.example.javierdiaz.demooxcom.R;
+import com.example.javierdiaz.demooxcom.beans.EfectoAdverso;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,6 +20,9 @@ import java.util.Map;
 public class BaseActivity extends AppCompatActivity {
 
     AlertDialog progressDialog;
+    protected static EfectoAdverso  mEfectoAdversos;
+    protected static String mSelectedProblema;
+    protected static String mSelectedMedicina;
 
 
     /**
@@ -27,6 +32,12 @@ public class BaseActivity extends AppCompatActivity {
      */
     public void navigateToActivity(Class<?> cls) {
         Intent intent = new Intent(getApplicationContext(), cls);
+        startActivity(intent);
+    }
+
+    public void navigateToActivityWithNoHistory(Class<?> cls) {
+        Intent intent = new Intent(getApplicationContext(), cls);
+        intent.setFlags(intent.getFlags() | Intent.FLAG_ACTIVITY_NO_HISTORY);
         startActivity(intent);
     }
 
@@ -84,6 +95,5 @@ public class BaseActivity extends AppCompatActivity {
             dismissDialog();
         }
     }
-
 
 }

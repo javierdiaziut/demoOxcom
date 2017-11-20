@@ -15,4 +15,31 @@
     <string name="linea_terapeutica">Linea Terapéutica</string>
     <string name="title_guia_efectos_adversos">Guia de efectos adversos</string>
     <string name="lorem_ipsum">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</string>
+
+    <!--Detalle de Producto -->
+
+    <string name="recomendacion">Recomendación</string>}
+    <string name="recomendacion_desc">Se recomienda el control rutinario de la presion arterial
+        durante la terapia. Se sugiere que este se debe realizar tanto
+        antes como después de cada una de las primeras dosis de
+        Avastin y luego antes de cada dosis. </string>
+    <string name="grado1">Grado 1</string>
+    <string name="grado2">Grado 2</string>
+    <string name="grado3">Grado 3</string>
+    <string name="grado4">Grado 4</string>
+    <string name="criterio">Criterio</string>
+    <string name="manejo">Manejo</string>
+
+    <!--Reportar Evento Adverso -->
+    <string name="desea_reportar">¿Desea reportar un Efecto Adverso?</string>
+    <string name="text_desc_1">Para entregar esta información, usted
+            debe ponerse en contacto con el departamento
+            de Farmacovigilancia.</string>
+    <string name="email_reporte">chile.farmacovigilancia@roche.com</string>
+    <string name="enviar_ahora">Enviar Ahora</string>
+    <string name="text_desc2">Tambien puede llamar directamente al\n<b>800 365 365</b></string>
+    <string name="llamar_ahora">Llamar Ahora</string>
+    <string name="politica_txt">Politica de información para reportar un EA.</string>
+    <string name="reportar_efecto_adverso">Reportar un Efecto Adverso</string>
+
 </resources>

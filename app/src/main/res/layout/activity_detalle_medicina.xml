@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.teravision.unicef.kidpower.activities.GuiaEfectosAdversosActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,15 +16,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <TextView
-            android:id="@+id/textTitleLinea"
+        <ImageView
+            android:id="@+id/imgDetailProduct"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/includedAppBarTitle" />
+            android:layout_below="@+id/includedAppBarTitle"
+            android:src="@mipmap/logo_avastin"
+            android:background="@android:color/white"/>
 
         <ListView
             android:id="@+id/list_medicamentos"
-            android:layout_below="@+id/textTitleLinea"
+            android:layout_below="@+id/imgDetailProduct"
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_height="match_parent"></ListView>

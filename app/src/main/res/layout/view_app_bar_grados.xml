@@ -1,0 +1,57 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_height_app_bar_on_boarding"
+        android:background="@color/colorAccent">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:text="Cerrar"
+            android:textColor="@color/md_white_1000" />
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/fabBackButton">
+
+            <TextView
+                android:id="@+id/textViewProductos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/md_white_1000"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_alignParentBottom="true"></View>
+    </RelativeLayout>
+
+</layout>

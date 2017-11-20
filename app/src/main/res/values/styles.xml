@@ -49,6 +49,18 @@
         <item name="android:textColor">@color/textColorWhite</item>
     </style>
 
+    <style name="btnTheme">
+        <!--<item name="android:layout_height">@dimen/dimen_height_item_medium</item>-->
+        <item name="android:background">@drawable/btn_single_buttons</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">@dimen/dimen_padding_top_bottom_edittext</item>
+        <item name="android:paddingBottom">@dimen/dimen_padding_top_bottom_edittext</item>
+        <item name="android:paddingStart">@dimen/geralPadding</item>
+        <item name="android:paddingEnd">@dimen/geralPadding</item>
+        <item name="android:textSize">@dimen/text_size_x3</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+    </style>
+
     <style name="GralButtonStyle" parent="@android:style/Widget.Button">
         <item name="android:background">@drawable/edittext_rounded_corners</item>
         <item name="android:textSize">@dimen/dimen_text_size_button</item>

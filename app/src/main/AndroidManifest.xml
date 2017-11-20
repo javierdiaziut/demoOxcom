@@ -26,7 +26,14 @@
         <activity
             android:name=".activities.LineaTerapeuticaActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.DetalleMedicinaActivity"></activity>
+        <activity
+            android:name=".activities.DetalleMedicinaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DetalleProductoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ReportarEventoActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
