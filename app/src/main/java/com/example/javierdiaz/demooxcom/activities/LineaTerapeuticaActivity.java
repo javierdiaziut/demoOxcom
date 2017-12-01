@@ -53,6 +53,14 @@ public class LineaTerapeuticaActivity extends BaseActivity implements TabLayout.
         binding.tabs.getTabAt(1).select();
         binding.tabs.addOnTabSelectedListener(this);
 
+        binding.includedAppBarTitle.btnBack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
     }
 
     private void getNameItems(){

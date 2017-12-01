@@ -80,6 +80,14 @@ public class DetalleProductoActivity extends BaseActivity {
                 onBackPressed();
             }
         });
+
+        binding.includedAppBarTitle.btnBack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 
     private void updateDataScreen(Grado mgrado) {

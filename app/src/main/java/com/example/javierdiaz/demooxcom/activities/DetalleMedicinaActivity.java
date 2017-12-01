@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.example.javierdiaz.demooxcom.R;
 import com.example.javierdiaz.demooxcom.adapters.ListGuiaESAdapter;
@@ -36,9 +37,15 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 mEfectoAdversos = new EfectoAdverso();
-                mEfectoAdversos = GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
-                mSelectedProblema = values.get(position);
-                navigateToActivity(DetalleProductoActivity.class);
+                //TODO OJO CON ESTO
+                if((GuiaEfectosAdversosActivity.mProductosLinea.size()> position)&&(GuiaEfectosAdversosActivity.mProductosLinea.get(position) != null)){
+                    mEfectoAdversos = GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
+                    mSelectedProblema = values.get(position);
+                    navigateToActivity(DetalleProductoActivity.class);
+                }else{
+                    Toast.makeText(getApplicationContext(), "No disponible",Toast.LENGTH_SHORT).show();
+                }
+
 
             }
         });
@@ -53,6 +60,14 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
         binding.tabs.setSelected(false);
         binding.tabs.getTabAt(1).select();
         binding.tabs.addOnTabSelectedListener(this);
+
+        binding.includedAppBarTitle.btnBack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
     }
 
