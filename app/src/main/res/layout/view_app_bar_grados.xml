@@ -4,7 +4,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_height_app_bar_on_boarding"
-        android:background="@color/colorAccent">
+        android:background="@color/color_notification_bar">
 
 
         <ImageButton
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="13dp"
             android:layout_marginLeft="25dp"
             android:textStyle="bold"
             android:text="Cerrar"

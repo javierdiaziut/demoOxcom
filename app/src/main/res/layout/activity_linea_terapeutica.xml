@@ -6,7 +6,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000">
 
 
         <include
@@ -24,13 +25,14 @@
             android:layout_below="@+id/includedAppBarTitle"
             android:text=""
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:textStyle="bold"
             android:textSize="16sp" />
 
         <ListView
             android:id="@+id/list_linea_terapeutica"
             android:layout_below="@+id/textTitleLinea"
+            android:background="@color/md_white_1000"
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_height="200dp"></ListView>
@@ -43,6 +45,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:gravity="center"
             android:text="@string/lorem_ipsum" />
 
 
@@ -50,7 +53,7 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/main_btn_color"
+            android:background="@color/color_notification_bar"
             android:layout_alignParentBottom="true" />
     </RelativeLayout>
 </layout>

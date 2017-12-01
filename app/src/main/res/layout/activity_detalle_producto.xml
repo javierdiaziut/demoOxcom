@@ -5,7 +5,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/md_white_1000">
 
 
         <include
@@ -20,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/includedAppBarTitle"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:textColor="@android:color/black"
             android:textAllCaps="true" />
@@ -30,18 +31,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textViewMainTitle"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:textSize="15sp"
             android:text="@string/recomendacion"
-            android:textColor="@color/colorAccent" />
+            android:textColor="@color/title_color" />
 
         <View
             android:id="@+id/viewSeparator1"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_below="@+id/textViewRecomendacion"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:background="@android:color/black"></View>
 
         <TextView
@@ -49,8 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/viewSeparator1"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/recomendacion_desc" />
 
         <LinearLayout
@@ -60,8 +61,8 @@
             android:layout_height="30dp"
             android:padding="1dp"
             android:layout_below="@+id/textViewRecomendacionDesc"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
@@ -73,7 +74,8 @@
                 android:textAlignment="center"
                 android:textColor="@drawable/selector_textcolor_grade_buttons"
                 android:textAllCaps="false"
-                android:background="@drawable/selector_bkg_grade_buttons"
+
+                android:background="@drawable/selector_bkg_grade_btn_left"
                 android:layout_weight="1" />
             <View
                 android:layout_width="0.5dp"
@@ -118,7 +120,7 @@
                 android:textAlignment="center"
                 android:textColor="@drawable/selector_textcolor_grade_buttons"
                 android:textAllCaps="false"
-                android:background="@drawable/selector_bkg_grade_buttons"
+                android:background="@drawable/selector_bkg_grade_btn_right"
                 android:layout_weight="1" />
         </LinearLayout>
 
@@ -126,30 +128,32 @@
             android:id="@+id/textViewCriterio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:text="@string/criterio"
             android:textSize="15sp"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/title_color"
             android:layout_below="@id/linearButtonsGrados"/>
 
         <TextView
             android:id="@+id/textViewCriterioDesc"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="20dp"
             android:layout_below="@id/textViewCriterio"/>
 
         <TextView
             android:id="@+id/textViewManejo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
             android:text="@string/manejo"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/title_color"
             android:textSize="15sp"
             android:layout_below="@id/textViewCriterioDesc"/>
 
@@ -157,7 +161,7 @@
             android:id="@+id/textViewManejoDesc"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_below="@id/textViewManejo"/>

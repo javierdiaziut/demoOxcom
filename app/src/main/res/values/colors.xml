@@ -6,6 +6,8 @@
     <color name="colorAccent">#5bb0f7</color>
     <color name="transparent">#00ffffff</color>
     <color name="main_btn_color">#0066cb</color>
+    <color name="color_notification_bar">#2864AE</color>
+    <color name="title_color">#007AFF</color>
 
     <color name="colodBackgroundWhite">@color/md_text_white</color>
     <color name="textColorWhite">@color/md_text_white</color>
