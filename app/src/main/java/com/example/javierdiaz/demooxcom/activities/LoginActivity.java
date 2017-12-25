@@ -145,7 +145,7 @@ public class LoginActivity extends BaseActivity {
     }
 
     public void ingresarSolicitud() {
-        mApiService.crearSolicitud("","",binding.editTextUser.getText().toString(), 20171010).enqueue(new Callback<GeneralResponseLogin>() {
+        mApiService.crearSolicitud("Nombre","Apellido",binding.editTextUser.getText().toString(), 20171010).enqueue(new Callback<GeneralResponseLogin>() {
             @Override
             public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
                 if(response.isSuccessful()) {
