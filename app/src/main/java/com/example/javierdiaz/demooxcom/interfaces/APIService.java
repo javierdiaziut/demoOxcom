@@ -26,4 +26,8 @@ public interface APIService {
     @POST("recuperarPass.php")
     @FormUrlEncoded
     Call<GeneralResponseLogin> recuperarPass(@Field("email") String email, @Field("codeAPPRoche") int codeAPPRoche);
+
+    @POST("getUltimaActua.php")
+    @FormUrlEncoded
+    Call<GeneralResponseLogin> getUltimaActua(@Field("codeAPPRoche") int codeAPPRoche);
 }
