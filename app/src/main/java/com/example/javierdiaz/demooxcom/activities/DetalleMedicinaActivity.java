@@ -39,7 +39,7 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
                 mEfectoAdversos = new EfectoAdverso();
                 //TODO OJO CON ESTO
                 if((GuiaEfectosAdversosActivity.mProductosLinea.size()> position)&&(GuiaEfectosAdversosActivity.mProductosLinea.get(position) != null)){
-                    mEfectoAdversos = GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
+                    //mEfectoAdversos = GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
                     mSelectedProblema = values.get(position);
                     navigateToActivity(DetalleProductoActivity.class);
                 }else{

@@ -11,7 +11,7 @@ public class Productos implements Serializable {
 
     String foto;
     String nombreProducto;
-    EfectoAdverso efectoAdverso;
+    List<EfectoAdverso>  efectoAdverso;
 
     public Productos() {
     }
@@ -32,11 +32,11 @@ public class Productos implements Serializable {
         this.nombreProducto = nombreProducto;
     }
 
-    public EfectoAdverso getEfectoAdverso() {
+    public List<EfectoAdverso> getEfectoAdverso() {
         return efectoAdverso;
     }
 
-    public void setEfectoAdverso(EfectoAdverso efectoAdverso) {
+    public void setEfectoAdverso(List<EfectoAdverso> efectoAdverso) {
         this.efectoAdverso = efectoAdverso;
     }
 }
