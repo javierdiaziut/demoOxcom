@@ -42,15 +42,6 @@ public class LoginActivity extends BaseActivity {
         mApiService = ApiUtils.getAPIService();
         //mApiServiceNoURL = ApiUtils.getAPIServiceNoURL();
         getUltimaActualizacion(20171010);
-//        try {
-//            JSONObject obj = new JSONObject(loadJSONFromAsset());
-//
-//            Gson gson = new Gson();
-//            Type listType = new TypeToken<DataApp>(){}.getType();
-//            mDatosApp = gson.fromJson(obj.toString(), listType);
-//        } catch (JSONException e) {
-//            e.printStackTrace();
-//        }
 
         binding.buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,28 +92,29 @@ public class LoginActivity extends BaseActivity {
     }
 
     public void sendPost(LoginBean body) {
-        mApiService.login(body.getUser(),body.getPass(),body.getCodeAPPRoche()).enqueue(new Callback<GeneralResponseLogin>() {
-            @Override
-            public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
-                if(response.isSuccessful()) {
-                    Log.i("LOGIN SUCCESS", "post submitted to API." + response.body().toString());
-                    if(response.body().getSuccess() == 1){
-                        navigateToActivity(GuiaEfectosAdversosActivity.class);
-                    }else{
-                        Toast.makeText(getApplicationContext(),"Usuario no registrado",Toast.LENGTH_LONG).show();
-                    }
-                }else{
-                    Log.i("LOGIN ERROR", "post submitted to API." + response.body().toString());
-                }
-
-            }
-
-            @Override
-            public void onFailure(Call<GeneralResponseLogin> call, Throwable t) {
-                Log.e("LOGIN FAIL", "Unable to submit post to API.");
-
-            }
-        });
+//        mApiService.login(body.getUser(),body.getPass(),body.getCodeAPPRoche()).enqueue(new Callback<GeneralResponseLogin>() {
+//            @Override
+//            public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
+//                if(response.isSuccessful()) {
+//                    Log.i("LOGIN SUCCESS", "post submitted to API." + response.body().toString());
+//                    if(response.body().getSuccess() == 1){
+//                        navigateToActivity(GuiaEfectosAdversosActivity.class);
+//                    }else{
+//                        Toast.makeText(getApplicationContext(),"Usuario no registrado",Toast.LENGTH_LONG).show();
+//                    }
+//                }else{
+//                    Log.i("LOGIN ERROR", "post submitted to API." + response.body().toString());
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onFailure(Call<GeneralResponseLogin> call, Throwable t) {
+//                Log.e("LOGIN FAIL", "Unable to submit post to API.");
+//
+//            }
+//        });
+        navigateToActivity(GuiaEfectosAdversosActivity.class);
     }
 
     public void getUltimaActualizacion(int codeAPPRoche) {
@@ -200,29 +192,7 @@ public class LoginActivity extends BaseActivity {
         }
     }
 
-    public void ingresarSolicitud() {
-        mApiService.crearSolicitud("Nombre","Apellido",binding.editTextUser.getText().toString(), 20171010).enqueue(new Callback<GeneralResponseLogin>() {
-            @Override
-            public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
-                if(response.isSuccessful()) {
-                    if(response.body().getSuccess() == 1){
-                        Toast.makeText(getApplicationContext(),"Solicitud enviada",Toast.LENGTH_LONG).show();
-                    }else{
-                        Toast.makeText(getApplicationContext(),"Solicitud no enviada",Toast.LENGTH_LONG).show();
-                    }
-                }else{
-                    Log.i("ingresarSolicitud ERROR", "post submitted to API." + response.body().toString());
-                }
 
-            }
-
-            @Override
-            public void onFailure(Call<GeneralResponseLogin> call, Throwable t) {
-                Log.e("ingresarSolicitud FAIL", "Unable to submit post to API.");
-
-            }
-        });
-    }
 
     public void recuperarContraseña() {
         mApiService.recuperarPass(binding.editTextUser.getText().toString(), 20171010).enqueue(new Callback<GeneralResponseLogin>() {

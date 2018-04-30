@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DemoOxcom.iml" filepath="$PROJECT_DIR$/DemoOxcom.iml" />
-      <module fileurl="file://C:\Users\SinAsignarT1\AndroidStudioProjects\demoOxcom\DemoOxcom.iml" filepath="C:\Users\SinAsignarT1\AndroidStudioProjects\demoOxcom\DemoOxcom.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demoOxcom.iml" filepath="$PROJECT_DIR$/demoOxcom.iml" />
       <module fileurl="file://C:\Users\Javier\ProyectosAndroid\DemoOxcom\.idea\demoOxcom.iml" filepath="C:\Users\Javier\ProyectosAndroid\DemoOxcom\.idea\demoOxcom.iml" />
     </modules>
   </component>

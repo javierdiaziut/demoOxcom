@@ -27,7 +27,7 @@ public interface APIService {
     @POST("ingresarSolicitud.php")
 
     @FormUrlEncoded
-    Call<GeneralResponseLogin> crearSolicitud(@Field("nombre") String nombre, @Field("apellido") String apellido, @Field("email") String email, @Field("codeAPPRoche") int codeAPPRoche);
+    Call<GeneralResponseLogin> crearSolicitud(@Field("nombre") String nombre, @Field("apellido") String apellido,@Field("rut") String rut, @Field("email") String email, @Field("codeAPPRoche") int codeAPPRoche);
 
     @POST("recuperarPass.php")
     @FormUrlEncoded
