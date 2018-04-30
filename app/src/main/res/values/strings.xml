@@ -41,5 +41,19 @@
     <string name="llamar_ahora">Llamar Ahora</string>
     <string name="politica_txt">Politica de información para reportar un EA.</string>
     <string name="reportar_efecto_adverso">Reportar un Efecto Adverso</string>
+    <string name="title_activity_main2">Main2Activity</string>
 
+    <!--Solicitar Acceso -->
+    <string name="title_solictar_acceso">Solicitar\nAcceso</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre_hint">Ingrese su nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="apellido_hint">Ingrese su apellido</string>
+    <string name="rut">Rut</string>
+    <string name="rut_hint">Ingrese su rut</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Ingrese su email</string>
+    <string name="confirmar_email">Confirmar Email</string>
+    <string name="confirmar_email_hint">Confirme su email</string>
+    <string name="volver">Volver</string>
 </resources>

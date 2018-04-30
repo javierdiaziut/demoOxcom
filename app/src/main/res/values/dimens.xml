@@ -35,6 +35,7 @@
 
     <dimen name="dimen_height_item_medium">42dp</dimen>
     <dimen name="dimen_height_item_error">37dp</dimen>
+    <dimen name="dimen_height_editt_small">28dp</dimen>
 
 
     <dimen name="text_gral_title">18sp</dimen>

@@ -67,9 +67,10 @@ public class LoginActivity extends BaseActivity {
         binding.textViewRequestAccess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(validateEmail()){
-                    ingresarSolicitud();
-                }
+                navigateToActivity(SolicitarAccesoActivity.class);
+//                if(validateEmail()){
+//                    ingresarSolicitud();
+//                }
             }
         });
 

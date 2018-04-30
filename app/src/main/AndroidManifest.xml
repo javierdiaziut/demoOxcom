@@ -34,7 +34,10 @@
         <activity
             android:name=".activities.DetalleProductoActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.ReportarEventoActivity"
+        <activity
+            android:name=".activities.ReportarEventoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.SolicitarAccesoActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
