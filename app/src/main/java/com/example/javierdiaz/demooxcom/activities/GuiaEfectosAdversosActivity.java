@@ -40,8 +40,8 @@ public class GuiaEfectosAdversosActivity extends BaseActivity implements TabLayo
         binding.listGuiaEfectosAdversos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                //nombreLineaSeleccionada = LoginActivity.mDatosApp.getDatosApp().getLineaTerapeutica().get(position).getNombreLinea();
-                //mProductosLinea = (ArrayList<Productos>) LoginActivity.mDatosApp.getDatosApp().getLineaTerapeutica().get(position).getProductos();
+                nombreLineaSeleccionada = LoginActivity.mDatosApp.getLineaTerapeutica().get(position).getNombreLinea();
+                mProductosLinea = (ArrayList<Productos>) LoginActivity.mDatosApp.getLineaTerapeutica().get(position).getProductos();
                 navigateToActivity(LineaTerapeuticaActivity.class);
             }
         });
@@ -69,10 +69,10 @@ public class GuiaEfectosAdversosActivity extends BaseActivity implements TabLayo
     }
 
     private void getNameItems(){
-//        values = new ArrayList<>();
-//        for (int i =0; i < LoginActivity.mDatosApp.getDatosApp().getLineaTerapeutica().size(); i++){
-//            values.add( LoginActivity.mDatosApp.getDatosApp().getLineaTerapeutica().get(i).getNombreLinea());
-//        }
+        values = new ArrayList<>();
+        for (int i =0; i < LoginActivity.mDatosApp.getLineaTerapeutica().size(); i++){
+            values.add( LoginActivity.mDatosApp.getLineaTerapeutica().get(i).getNombreLinea());
+        }
     }
 
 

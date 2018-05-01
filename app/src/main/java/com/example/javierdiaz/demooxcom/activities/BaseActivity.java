@@ -20,7 +20,7 @@ import java.util.Map;
 public class BaseActivity extends AppCompatActivity {
 
     AlertDialog progressDialog;
-    protected static EfectoAdverso  mEfectoAdversos;
+    protected static ArrayList<EfectoAdverso>  mEfectoAdversos;
     protected static String mSelectedProblema;
     protected static String mSelectedMedicina;
 

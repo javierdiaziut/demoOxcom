@@ -36,10 +36,10 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
         binding.listMedicamentos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                mEfectoAdversos = new EfectoAdverso();
+                mEfectoAdversos = new ArrayList<>();
                 //TODO OJO CON ESTO
                 if((GuiaEfectosAdversosActivity.mProductosLinea.size()> position)&&(GuiaEfectosAdversosActivity.mProductosLinea.get(position) != null)){
-                    //mEfectoAdversos = GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
+                    mEfectoAdversos = (ArrayList)GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
                     mSelectedProblema = values.get(position);
                     navigateToActivity(DetalleProductoActivity.class);
                 }else{
@@ -73,13 +73,11 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
 
     private void getItemList(){
         values = new ArrayList<>();
-        values.add("Hipertension");
-        values.add("Eventos tromboembolicos venosos (VTE)");
-        values.add("Prblema de cicatrizacion");
-        values.add("Proteinuiria");
-        values.add("Episodios hemorragicos");
-        values.add("Eventos tromboembolicos arteriales (ATE)");
-        values.add("Perforacion gastrointestinal (GI)");
+        if(mEfectoAdversos != null){
+            for(EfectoAdverso mEfectoAdverso: mEfectoAdversos){
+                values.add(mEfectoAdverso.getTitulo());
+            }
+        }
 
     }
 

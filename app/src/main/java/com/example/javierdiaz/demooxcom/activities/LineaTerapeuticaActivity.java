@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 
 import com.example.javierdiaz.demooxcom.R;
 import com.example.javierdiaz.demooxcom.adapters.ListGuiaESAdapter;
+import com.example.javierdiaz.demooxcom.beans.EfectoAdverso;
 import com.example.javierdiaz.demooxcom.beans.LineaTerapeutica;
 import com.example.javierdiaz.demooxcom.beans.Productos;
 import com.example.javierdiaz.demooxcom.databinding.ActivityLineaTerapeuticaBinding;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 
 public class LineaTerapeuticaActivity extends BaseActivity implements TabLayout.OnTabSelectedListener{
     ActivityLineaTerapeuticaBinding binding;
+//    public static ArrayList<EfectoAdverso> mSelectedEfectoAdverso;
     ArrayList<String> values;
     final int[] ICONS = new int[]{
             R.mipmap.danger,
@@ -37,6 +39,8 @@ public class LineaTerapeuticaActivity extends BaseActivity implements TabLayout.
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 mSelectedMedicina = values.get(position);
+                mEfectoAdversos = (ArrayList<EfectoAdverso>) GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
+
                 navigateToActivity(DetalleMedicinaActivity.class);
             }
         });

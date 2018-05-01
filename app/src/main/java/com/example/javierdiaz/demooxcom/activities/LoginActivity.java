@@ -40,7 +40,6 @@ public class LoginActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_log_in);
         mApiService = ApiUtils.getAPIService();
-        //mApiServiceNoURL = ApiUtils.getAPIServiceNoURL();
         getUltimaActualizacion(20171010);
 
         binding.buttonLogin.setOnClickListener(new View.OnClickListener() {
