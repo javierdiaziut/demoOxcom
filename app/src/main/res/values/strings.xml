@@ -60,4 +60,14 @@
     <!--Perfil de Usuario -->
     <string name="datos_usuario">Datos Usuario</string>
     <string name="solictar_soporte">Solictar Soporte</string>
+
+    <!--Perfil de Usuario -->
+    <string name="subject_solicitud_soporte">Solicitud de Soporte</string>
+    <string name="dummie_email_body">
+        Nombre: JAVIER PRADO\n
+        Rut: 15780437-5\n
+        Ingrese su mensaje:\n\n\n\n
+        Javier Prado Echeverria\n
+        Cel: 9 072 68 82
+    </string>
 </resources>

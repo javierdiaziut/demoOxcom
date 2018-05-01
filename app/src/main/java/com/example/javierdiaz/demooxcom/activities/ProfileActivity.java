@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.view.View;
 
 import com.example.javierdiaz.demooxcom.R;
 import com.example.javierdiaz.demooxcom.databinding.ActivityProfileBinding;
@@ -22,6 +23,13 @@ public class ProfileActivity extends BaseActivity implements TabLayout.OnTabSele
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_profile);
+
+        binding.buttonSolicitarSoporte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sendEmail("chile.farmacovigilancia@roche.com",getString(R.string.subject_solicitud_soporte),getString(R.string.dummie_email_body));
+            }
+        });
 
         binding.tabs.addTab(binding.tabs.newTab().setText("Guia"));
         binding.tabs.addTab(binding.tabs.newTab().setText("Usuario"));

@@ -5,9 +5,11 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.javierdiaz.demooxcom.R;
 import com.example.javierdiaz.demooxcom.beans.EfectoAdverso;
@@ -94,6 +96,22 @@ public class BaseActivity extends AppCompatActivity {
         } else {
             dismissDialog();
         }
+    }
+
+    public void sendEmail(String email, String subject,String body){
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setType("message/rfc822");
+        intent.putExtra(Intent.EXTRA_EMAIL, email);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, body);
+
+        try {
+            startActivity(Intent.createChooser(intent, "Send mail..."));
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
+        }
+
+
     }
 
 }
