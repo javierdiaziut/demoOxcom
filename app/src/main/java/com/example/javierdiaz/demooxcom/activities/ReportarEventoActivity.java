@@ -25,5 +25,13 @@ public class ReportarEventoActivity extends BaseActivity {
                 onBackPressed();
             }
         });
+
+        binding.btnEnviarAhora.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                sendEmail("chile.farmacovigilancia@roche.com",getString(R.string.subject_reporte_evento),getString(R.string.dummie_email_reporte));
+            }
+        });
     }
 }

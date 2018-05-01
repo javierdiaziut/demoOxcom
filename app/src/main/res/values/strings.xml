@@ -70,4 +70,10 @@
         Javier Prado Echeverria\n
         Cel: 9 072 68 82
     </string>
+    <string name="subject_reporte_evento">Reporte Evento Adverso</string>
+    <string name="dummie_email_reporte">
+        Ingrese evento a reportar:\n\n\n\n
+        Javier Prado Echeverria\n
+        Cel: 9 072 68 82
+    </string>
 </resources>
