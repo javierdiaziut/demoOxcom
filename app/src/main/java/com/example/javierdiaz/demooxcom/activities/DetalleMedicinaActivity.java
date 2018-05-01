@@ -20,9 +20,9 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
     ActivityDetalleMedicinaBinding binding;
     ArrayList<String> values;
     final int[] ICONS = new int[]{
-            R.mipmap.danger,
+            R.mipmap.guia,
             R.mipmap.user,
-            R.mipmap.settings
+            R.mipmap.danger
     };
 
     @Override
@@ -49,16 +49,16 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
 
             }
         });
-        binding.tabs.addTab(binding.tabs.newTab().setText(""));
-        binding.tabs.addTab(binding.tabs.newTab().setText(""));
-        binding.tabs.addTab(binding.tabs.newTab().setText(""));
+        binding.tabs.addTab(binding.tabs.newTab().setText("Guia"));
+        binding.tabs.addTab(binding.tabs.newTab().setText("Usuario"));
+        binding.tabs.addTab(binding.tabs.newTab().setText("Reportar"));
         binding.tabs.getTabAt(0).setIcon(ICONS[0]);
         binding.tabs.getTabAt(1).setIcon(ICONS[1]);
-        binding.tabs.getTabAt(2).setIcon(ICONS[2]);
+        binding.tabs.getTabAt(2).setIcon(ICONS[2]);;
         binding.tabs.setTabGravity(TabLayout.GRAVITY_FILL);
         binding.tabs.setSelectedTabIndicatorColor(getResources().getColor(R.color.colorAccent));
         binding.tabs.setSelected(false);
-        binding.tabs.getTabAt(1).select();
+        binding.tabs.getTabAt(0).select();
         binding.tabs.addOnTabSelectedListener(this);
 
         binding.includedAppBarTitle.btnBack.setOnClickListener(new View.OnClickListener() {
@@ -84,8 +84,10 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
 
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
-        if(tab.getPosition() == 0){
+        if(tab.getPosition() == 2){
             navigateToActivityWithNoHistory(ReportarEventoActivity.class);
+        }else if (tab.getPosition() == 1){
+            navigateToActivityWithNoHistory(ProfileActivity.class);
         }
 
     }

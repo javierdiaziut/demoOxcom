@@ -56,4 +56,8 @@
     <string name="confirmar_email">Confirmar Email</string>
     <string name="confirmar_email_hint">Confirme su email</string>
     <string name="volver">Volver</string>
+
+    <!--Perfil de Usuario -->
+    <string name="datos_usuario">Datos Usuario</string>
+    <string name="solictar_soporte">Solictar Soporte</string>
 </resources>
