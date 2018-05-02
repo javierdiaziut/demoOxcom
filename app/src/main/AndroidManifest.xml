@@ -42,6 +42,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.ProfileActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a783b9dc863af4505d2025c1b0440132a121d60b" />
     </application>
 
 </manifest>

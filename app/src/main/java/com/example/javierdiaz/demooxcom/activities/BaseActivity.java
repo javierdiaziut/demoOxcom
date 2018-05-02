@@ -110,8 +110,13 @@ public class BaseActivity extends AppCompatActivity {
         } catch (android.content.ActivityNotFoundException ex) {
             Toast.makeText(this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
         }
+    }
 
-
+    public void openTermsAndPrivacy(){
+        String url = "https://www.dialogoroche.com/cl/index/politica_de_privacidad.html";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 
 }

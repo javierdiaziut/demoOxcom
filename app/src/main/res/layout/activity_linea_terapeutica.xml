@@ -38,15 +38,35 @@
             android:layout_height="200dp"></ListView>
 
         <TextView
-            android:id="@+id/textAreaGuiaEfectos"
+            android:id="@+id/textAreaHiperLink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/list_linea_terapeutica"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:gravity="center"
-            android:text="@string/lorem_ipsum" />
+            android:textSize="16sp"
+            android:text="@string/politicas_privacidad" />
+
+        <TextView
+            android:id="@+id/textArea2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textAreaHiperLink"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/roche_2018" />
+
+        <TextView
+            android:id="@+id/textArea3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textArea2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/roche_text" />
 
 
         <android.support.design.widget.TabLayout

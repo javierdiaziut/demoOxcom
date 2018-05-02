@@ -44,6 +44,12 @@ public class LineaTerapeuticaActivity extends BaseActivity implements TabLayout.
                 navigateToActivity(DetalleMedicinaActivity.class);
             }
         });
+        binding.textAreaHiperLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTermsAndPrivacy();
+            }
+        });
 
 
         binding.tabs.addTab(binding.tabs.newTab().setText("Guia"));

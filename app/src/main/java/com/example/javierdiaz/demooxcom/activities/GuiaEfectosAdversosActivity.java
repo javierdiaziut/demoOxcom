@@ -46,6 +46,14 @@ public class GuiaEfectosAdversosActivity extends BaseActivity implements TabLayo
             }
         });
 
+        binding.includedAppBarTitle.btnBack.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
 
         binding.tabs.addTab(binding.tabs.newTab().setText("Guia"));
         binding.tabs.addTab(binding.tabs.newTab().setText("Usuario"));

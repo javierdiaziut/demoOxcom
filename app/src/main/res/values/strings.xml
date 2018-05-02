@@ -76,4 +76,9 @@
         Javier Prado Echeverria\n
         Cel: 9 072 68 82
     </string>
+
+    <string name="politicas_privacidad"><u>Politicas de Privacidad</u>.</string>
+    <string name="roche_2018">2018 Roche Chile Ltda</string>
+    <string name="roche_text">La información incluida en esta sección y en el\nresto de esta aplicación,
+    es exclusiva para\nProfesionales de la Salud</string>
 </resources>
