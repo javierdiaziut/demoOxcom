@@ -64,7 +64,7 @@
     <dimen name="padding_msg1">15dp</dimen>
 
     <dimen name="dimen_margin_top_button">10dp</dimen>
-    <dimen name="dimen_margin_bottom_button">50dp</dimen>
+    <dimen name="dimen_margin_bottom_button">40dp</dimen>
     <dimen name="dimen_margin_left_button">40dp</dimen>
     <dimen name="dimen_margin_right_button">40dp</dimen>
     <dimen name="dimen_forgot_pwd_size">180dp</dimen>

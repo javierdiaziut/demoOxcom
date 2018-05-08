@@ -94,29 +94,28 @@ public class LoginActivity extends BaseActivity {
     }
 
     public void sendPost(LoginBean body) {
-//        mApiService.login(body.getUser(),body.getPass(),body.getCodeAPPRoche()).enqueue(new Callback<GeneralResponseLogin>() {
-//            @Override
-//            public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
-//                if(response.isSuccessful()) {
-//                    Log.i("LOGIN SUCCESS", "post submitted to API." + response.body().toString());
-//                    if(response.body().getSuccess() == 1){
-//                        navigateToActivity(GuiaEfectosAdversosActivity.class);
-//                    }else{
-//                        Toast.makeText(getApplicationContext(),"Usuario no registrado",Toast.LENGTH_LONG).show();
-//                    }
-//                }else{
-//                    Log.i("LOGIN ERROR", "post submitted to API." + response.body().toString());
-//                }
-//
-//            }
-//
-//            @Override
-//            public void onFailure(Call<GeneralResponseLogin> call, Throwable t) {
-//                Log.e("LOGIN FAIL", "Unable to submit post to API.");
-//
-//            }
-//        });
-        navigateToActivity(GuiaEfectosAdversosActivity.class);
+        mApiService.login(body.getUser(),body.getPass(),body.getCodeAPPRoche()).enqueue(new Callback<GeneralResponseLogin>() {
+            @Override
+            public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
+                if(response.isSuccessful()) {
+                    Log.i("LOGIN SUCCESS", "post submitted to API." + response.body().toString());
+                    if(response.body().getSuccess() == 1){
+                        navigateToActivity(GuiaEfectosAdversosActivity.class);
+                    }else{
+                        Toast.makeText(getApplicationContext(),"Usuario no registrado",Toast.LENGTH_LONG).show();
+                    }
+                }else{
+                    Log.i("LOGIN ERROR", "post submitted to API." + response.body().toString());
+                }
+
+            }
+
+            @Override
+            public void onFailure(Call<GeneralResponseLogin> call, Throwable t) {
+                Log.e("LOGIN FAIL", "Unable to submit post to API.");
+
+            }
+        });
     }
 
     public void getUltimaActualizacion(int codeAPPRoche) {
