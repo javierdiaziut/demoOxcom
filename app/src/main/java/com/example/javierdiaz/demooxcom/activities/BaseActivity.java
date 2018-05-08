@@ -2,6 +2,7 @@ package com.example.javierdiaz.demooxcom.activities;
 
 
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -99,11 +100,12 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void sendEmail(String email, String subject,String body){
-        Intent intent = new Intent(Intent.ACTION_SENDTO);
-        intent.setType("message/rfc822");
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_EMAIL, email);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, body);
+        intent.setPackage("com.google.android.gm");
 
         try {
             startActivity(Intent.createChooser(intent, "Send mail..."));
@@ -116,7 +118,15 @@ public class BaseActivity extends AppCompatActivity {
         String url = "https://www.dialogoroche.com/cl/index/politica_de_privacidad.html";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
-        startActivity(i);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        i.setPackage("com.android.chrome");
+        try {
+            startActivity(i);
+        } catch (ActivityNotFoundException ex) {
+            // Chrome browser presumably not installed and open Kindle Browser
+            i.setPackage("com.amazon.cloud9");
+            startActivity(i);
+        }
     }
 
 }

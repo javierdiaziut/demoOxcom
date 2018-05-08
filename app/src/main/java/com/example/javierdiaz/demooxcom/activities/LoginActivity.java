@@ -48,11 +48,12 @@ public class LoginActivity extends BaseActivity {
         binding.buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(validateFileds()){
-                    LoginBean mLoginBean = new LoginBean(binding.editTextUser.getText().toString(),
-                            binding.editTextPassword.getText().toString(),20171010);
-                    sendPost(mLoginBean);
-                }
+                  navigateToActivity(GuiaEfectosAdversosActivity.class);
+//                if(validateFileds()){
+//                    LoginBean mLoginBean = new LoginBean(binding.editTextUser.getText().toString(),
+//                            binding.editTextPassword.getText().toString(),20171010);
+//                    //sendPost(mLoginBean);
+//                }
 
             }
         });

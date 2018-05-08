@@ -74,6 +74,12 @@ public class GuiaEfectosAdversosActivity extends BaseActivity implements TabLayo
                 onBackPressed();
             }
         });
+        binding.textAreaHiperLink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTermsAndPrivacy();
+            }
+        });
     }
 
     private void getNameItems(){
