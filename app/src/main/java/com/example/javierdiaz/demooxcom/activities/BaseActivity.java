@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.javierdiaz.demooxcom.R;
 import com.example.javierdiaz.demooxcom.beans.EfectoAdverso;
+import com.example.javierdiaz.demooxcom.beans.Productos;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,6 +27,7 @@ public class BaseActivity extends AppCompatActivity {
     protected static ArrayList<EfectoAdverso>  mEfectoAdversos;
     protected static String mSelectedProblema;
     protected static String mSelectedMedicina;
+    protected static Productos mSelectedProducto;
 
 
     /**

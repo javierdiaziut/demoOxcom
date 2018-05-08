@@ -1,8 +1,10 @@
 package com.example.javierdiaz.demooxcom.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.design.widget.TabLayout;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,6 +13,7 @@ import android.widget.Toast;
 import com.example.javierdiaz.demooxcom.R;
 import com.example.javierdiaz.demooxcom.adapters.ListGuiaESAdapter;
 import com.example.javierdiaz.demooxcom.beans.EfectoAdverso;
+import com.example.javierdiaz.demooxcom.beans.Grado;
 import com.example.javierdiaz.demooxcom.beans.Productos;
 import com.example.javierdiaz.demooxcom.databinding.ActivityDetalleMedicinaBinding;
 
@@ -36,15 +39,28 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
         binding.listMedicamentos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                mEfectoAdversos = new ArrayList<>();
+                //mEfectoAdversos = new ArrayList<>();
                 //TODO OJO CON ESTO
-                if((GuiaEfectosAdversosActivity.mProductosLinea.size()> position)&&(GuiaEfectosAdversosActivity.mProductosLinea.get(position) != null)){
-                    mEfectoAdversos = (ArrayList)GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
-                    mSelectedProblema = values.get(position);
-                    navigateToActivity(DetalleProductoActivity.class);
-                }else{
+                try{
+                    ArrayList<Grado> grades = new ArrayList<>();
+                    grades = (ArrayList<Grado>) mSelectedProducto.getEfectoAdverso().get(position).getGrado();
+                    Bundle b = new Bundle();
+                    b.putSerializable("grades", grades);
+                    Intent i=new Intent(getApplicationContext(), DetalleProductoActivity.class);
+                    i.putExtras(b);
+                    startActivity(i);
+
+                }catch (Exception E){
                     Toast.makeText(getApplicationContext(), "No disponible",Toast.LENGTH_SHORT).show();
                 }
+
+//                if((GuiaEfectosAdversosActivity.mProductosLinea.size()> position)&&(GuiaEfectosAdversosActivity.mProductosLinea.get(position) != null)){
+//                    mEfectoAdversos = (ArrayList)GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
+//                    mSelectedProblema = values.get(position);
+//                    navigateToActivity(DetalleProductoActivity.class);
+//                }else{
+//
+//                }
 
 
             }

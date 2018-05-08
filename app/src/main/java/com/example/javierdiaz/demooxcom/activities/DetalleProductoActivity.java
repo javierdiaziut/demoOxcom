@@ -17,18 +17,27 @@ import java.util.ArrayList;
 public class DetalleProductoActivity extends BaseActivity {
 
     ActivityDetalleProductoBinding binding;
+    ArrayList<Grado> mGrados = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_detalle_producto);
-        updateDataScreen(mEfectoAdversos.get(0).getGrado().get(0));
+        if(this.getIntent().getExtras()!= null){
+            Bundle b = this.getIntent().getExtras();
+            mGrados= (ArrayList<Grado>) b.getSerializable("grades");
+        }
+
+
+
+        updateDataScreen(mGrados.get(0));
         binding.textViewMainTitle.setText(mSelectedProblema);
         binding.includedAppBarTitle.textViewProductos.setText(mSelectedMedicina);
         binding.btnGrade1.setOnClickListener(mOnClickListenerGrade1);
         binding.btnGrade2.setOnClickListener(mOnClickListenerGrade2);
         binding.btnGrade3.setOnClickListener(mOnClickListenerGrade3);
         binding.btnGrade4.setOnClickListener(mOnClickListenerGrade4);
+
 
         binding.btnGrade1.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -89,6 +98,8 @@ public class DetalleProductoActivity extends BaseActivity {
                 onBackPressed();
             }
         });
+
+        binding.btnGrade1.setPressed(true);
     }
 
     private void updateDataScreen(Grado mgrado) {
@@ -99,30 +110,30 @@ public class DetalleProductoActivity extends BaseActivity {
     View.OnClickListener mOnClickListenerGrade1 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if(mEfectoAdversos.get(0).getGrado().get(0) != null)
-            updateDataScreen(mEfectoAdversos.get(0).getGrado().get(0));
+            if(mGrados.get(0) != null)
+            updateDataScreen(mGrados.get(0));
         }
     };
 
     View.OnClickListener mOnClickListenerGrade2 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if((mEfectoAdversos.size() > 0) && (mEfectoAdversos.get(0).getGrado().size() > 0)&&(mEfectoAdversos.get(0).getGrado().get(1) != null))
-            updateDataScreen(mEfectoAdversos.get(0).getGrado().get(1));
+            if((mGrados.get(1) != null))
+            updateDataScreen(mGrados.get(1));
         }
     };
     View.OnClickListener mOnClickListenerGrade3 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if(((mEfectoAdversos.size() > 0) && (mEfectoAdversos.get(0).getGrado().size() > 1))&&(mEfectoAdversos.get(0).getGrado().get(2) != null))
-            updateDataScreen(mEfectoAdversos.get(0).getGrado().get(2));
+            if(mGrados.get(2) != null)
+            updateDataScreen(mGrados.get(2));
         }
     };
     View.OnClickListener mOnClickListenerGrade4 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            if(((mEfectoAdversos.size() > 0) && (mEfectoAdversos.get(0).getGrado().size() > 1))&&(mEfectoAdversos.get(0).getGrado().get(3) != null))
-            updateDataScreen(mEfectoAdversos.get(0).getGrado().get(3));
+            if(mGrados.get(3) != null)
+            updateDataScreen(mGrados.get(3));
         }
     };
 }

@@ -40,7 +40,7 @@ public class LineaTerapeuticaActivity extends BaseActivity implements TabLayout.
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 mSelectedMedicina = values.get(position);
                 mEfectoAdversos = (ArrayList<EfectoAdverso>) GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
-
+                mSelectedProducto = GuiaEfectosAdversosActivity.mProductosLinea.get(position);
                 navigateToActivity(DetalleMedicinaActivity.class);
             }
         });
