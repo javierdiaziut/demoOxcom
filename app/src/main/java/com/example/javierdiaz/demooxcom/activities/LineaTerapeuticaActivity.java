@@ -39,6 +39,7 @@ public class LineaTerapeuticaActivity extends BaseActivity implements TabLayout.
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 mSelectedMedicina = values.get(position);
+                imageToLoad = GuiaEfectosAdversosActivity.mProductosLinea.get(position).getFoto();
                 mEfectoAdversos = (ArrayList<EfectoAdverso>) GuiaEfectosAdversosActivity.mProductosLinea.get(position).getEfectoAdverso();
                 mSelectedProducto = GuiaEfectosAdversosActivity.mProductosLinea.get(position);
                 navigateToActivity(DetalleMedicinaActivity.class);

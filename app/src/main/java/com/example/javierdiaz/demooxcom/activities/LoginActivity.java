@@ -52,7 +52,7 @@ public class LoginActivity extends BaseActivity {
 //                if(validateFileds()){
 //                    LoginBean mLoginBean = new LoginBean(binding.editTextUser.getText().toString(),
 //                            binding.editTextPassword.getText().toString(),20171010);
-//                    //sendPost(mLoginBean);
+//                    sendPost(mLoginBean);
 //                }
 
             }

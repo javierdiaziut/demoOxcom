@@ -209,7 +209,7 @@
                         android:id="@+id/sa_confirmar_email"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/apellido"
+                        android:text="@string/confirmar_email"
                         android:textColor="@android:color/white"
                         android:textSize="16sp"/>
 
@@ -218,7 +218,7 @@
                         style="@style/GralEditTextTheme"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dimen_height_editt_small"
-                        android:hint="@string/apellido_hint"
+                        android:hint="@string/confirmar_email_hint"
                         android:layout_below="@+id/sa_confirmar_email"
                         android:textSize="12sp"
                         android:imeOptions="actionGo"

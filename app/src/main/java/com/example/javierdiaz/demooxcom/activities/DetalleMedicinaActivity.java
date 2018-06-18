@@ -84,6 +84,11 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
                 onBackPressed();
             }
         });
+        try{
+            loadImage(imageToLoad, binding.imgDetailProduct);
+        }catch (Exception e){
+
+        }
 
     }
 
