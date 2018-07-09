@@ -82,9 +82,12 @@ public class SolicitarAccesoActivity extends BaseActivity{
             public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
                 if(response.isSuccessful()) {
                     if(response.body().getSuccess() == 1){
-                        Toast.makeText(getApplicationContext(),"Solicitud enviada",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),response.body().getError(),Toast.LENGTH_LONG).show();
                     }else{
-                        Toast.makeText(getApplicationContext(),"Solicitud no enviada",Toast.LENGTH_LONG).show();
+                        if(response.body().getError() != null){
+                            Toast.makeText(getApplicationContext(),response.body().getError(),Toast.LENGTH_LONG).show();
+                        }
+
                     }
                 }else{
                     Log.i("ingresarSolicitud ERROR", "post submitted to API." + response.body().toString());
