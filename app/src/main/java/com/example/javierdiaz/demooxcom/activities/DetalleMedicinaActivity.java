@@ -46,6 +46,7 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
                     grades = (ArrayList<Grado>) mSelectedProducto.getEfectoAdverso().get(position).getGrado();
                     Bundle b = new Bundle();
                     b.putSerializable("grades", grades);
+                    mSelectedProblema = values.get(position);
                     Intent i=new Intent(getApplicationContext(), DetalleProductoActivity.class);
                     i.putExtras(b);
                     startActivity(i);
@@ -121,7 +122,7 @@ public class DetalleMedicinaActivity extends BaseActivity implements TabLayout.O
     @Override
     public void onTabReselected(TabLayout.Tab tab) {
         if(tab.getPosition() == 0){
-            navigateToActivityWithNoHistory(ReportarEventoActivity.class);
+            navigateToActivityWithNoHistory(GuiaEfectosAdversosActivity.class);
         }
     }
 }

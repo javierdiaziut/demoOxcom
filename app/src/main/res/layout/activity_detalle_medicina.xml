@@ -19,8 +19,9 @@
 
         <ImageView
             android:id="@+id/imgDetailProduct"
-            android:layout_width="match_parent"
+            android:layout_width="220dp"
             android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
             android:layout_below="@+id/includedAppBarTitle"
             android:src="@mipmap/logo_avastin"
             android:background="@android:color/white"/>

@@ -108,7 +108,7 @@ public class GuiaEfectosAdversosActivity extends BaseActivity implements TabLayo
     @Override
     public void onTabReselected(TabLayout.Tab tab) {
         if(tab.getPosition() == 0){
-            navigateToActivityWithNoHistory(ReportarEventoActivity.class);
+            navigateToActivityWithNoHistory(GuiaEfectosAdversosActivity.class);
         }
     }
 }

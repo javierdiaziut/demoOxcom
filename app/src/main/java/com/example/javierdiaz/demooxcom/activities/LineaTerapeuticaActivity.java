@@ -102,7 +102,7 @@ public class LineaTerapeuticaActivity extends BaseActivity implements TabLayout.
     @Override
     public void onTabReselected(TabLayout.Tab tab) {
         if(tab.getPosition() == 0){
-            navigateToActivityWithNoHistory(ReportarEventoActivity.class);
+            navigateToActivityWithNoHistory(GuiaEfectosAdversosActivity.class);
         }
 
     }

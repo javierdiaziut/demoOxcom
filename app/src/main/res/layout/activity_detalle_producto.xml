@@ -135,15 +135,22 @@
             android:textSize="15sp"
             android:textColor="@color/title_color"
             android:layout_below="@id/linearButtonsGrados"/>
-
-        <TextView
-            android:id="@+id/textViewCriterioDesc"
+        <ScrollView
+            android:id="@+id/ScrollCriterioDesc"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_below="@id/textViewCriterio"/>
+            android:layout_height="60dp"
+            android:layout_below="@id/textViewCriterio"
+            android:fillViewport="true">
+            <TextView
+                android:id="@+id/textViewCriterioDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1.0"
+                android:layout_below="@id/textViewCriterio"/>
+        </ScrollView>
 
         <TextView
             android:id="@+id/textViewManejo"
@@ -155,15 +162,24 @@
             android:text="@string/manejo"
             android:textColor="@color/title_color"
             android:textSize="15sp"
-            android:layout_below="@id/textViewCriterioDesc"/>
+            android:layout_below="@id/ScrollCriterioDesc"/>
 
-        <TextView
-            android:id="@+id/textViewManejoDesc"
+        <ScrollView
+            android:id="@+id/ScrollManejoDesc"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_below="@id/textViewManejo"/>
+            android:layout_below="@id/textViewManejo"
+            android:fillViewport="true">
+
+            <TextView
+                android:id="@+id/textViewManejoDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/textViewManejo"/>
+        </ScrollView>
+
     </RelativeLayout>
 </layout>
