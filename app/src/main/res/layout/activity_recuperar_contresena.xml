@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<include android:id="@+id/includedAppBarTitle"-->
+    <!--layout="@layout/view_app_bar"-->
+    <!--/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/fondo_login">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/paddingEndStart"
+            android:paddingStart="@dimen/paddingEndStart">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/ivKidPowerLogo"
+                    android:layout_width="@dimen/dimen_icon_login_width_height"
+                    android:layout_height="@dimen/dimen_icon_login_width_height"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_roche_new" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/title1_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guia"
+                        android:layout_below="@+id/ivKidPowerLogo"
+                        android:textSize="68sp"
+                        android:textStyle="bold"
+                        android:padding="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/md_white_1000"
+                        android:layout_margin="0dp" />
+
+                    <TextView
+                        android:id="@+id/title2_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/efectos_adversos"
+                        android:layout_below="@+id/linear1"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/md_white_1000"
+                        android:layout_marginTop="0dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_recuperar_contrasena"
+                android:layout_below="@+id/linear1"
+                android:textSize="28sp"
+                android:textAllCaps="true"
+                android:textColor="@color/md_white_1000"
+                android:layout_marginTop="5dp"
+                android:gravity="center" />
+
+            <RelativeLayout
+                android:id="@+id/viewContentUserData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcomeText"
+                android:layout_marginTop="12dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutMailContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/sa_nombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextEmail"
+                        style="@style/GralEditTextTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_height_editt_small"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/sa_nombre"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/email_hint"
+                        android:inputType="textEmailAddress">
+
+                        <requestFocus />
+
+                    </EditText>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayoutPwdContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/relativeLayoutMailContent">
+                    <TextView
+                        android:id="@+id/sa_apellido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirmar_email"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/editTextConfirmarEmail"
+                        style="@style/GralEditTextTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_height_editt_small"
+                        android:hint="@string/confirmar_email_hint"
+                        android:layout_below="@+id/sa_apellido"
+                        android:textSize="12sp"
+                        android:imeOptions="actionGo"
+                        android:inputType="textEmailAddress" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonRecuperarContrasena"
+                style="@style/GralbtnTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_height_editt_small"
+                android:text="@string/btn_recuperar"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/viewContentUserData" />
+
+            <Button
+                android:id="@+id/buttonVolver"
+                style="@style/GralbtnTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_height_editt_small"
+                android:text="@string/volver"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/buttonRecuperarContrasena" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
+

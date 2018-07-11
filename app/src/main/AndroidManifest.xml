@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.javierdiaz.demooxcom"
-    android:versionName="2.3"
-    android:versionCode="24">
+    android:versionCode="24"
+    android:versionName="2.3">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -43,11 +43,16 @@
         <activity
             android:name=".activities.SolicitarAccesoActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.ProfileActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="a783b9dc863af4505d2025c1b0440132a121d60b" />
+
+        <activity android:name=".activities.RecuperarContresenaActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -35,7 +35,6 @@ public class LoginActivity extends BaseActivity {
     ActivityLogInBinding binding;
     public static DatosApp mDatosApp;
     private APIService mApiService;
-    //private APIServiceNoURL mApiServiceNoURL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,18 +61,14 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 navigateToActivity(SolicitarAccesoActivity.class);
-//                if(validateEmail()){
-//                    ingresarSolicitud();
-//                }
+
             }
         });
 
         binding.textViewForgotPwd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(validateEmail()){
-                    recuperarContraseña();
-                }
+                navigateToActivityWithNoHistory(RecuperarContresenaActivity.class);
             }
         });
     }
@@ -184,41 +179,5 @@ public class LoginActivity extends BaseActivity {
             return true;
         }
     }
-
-    private boolean validateEmail(){
-        if (binding.editTextUser.getText().toString().trim().isEmpty()){
-            Toast.makeText(getApplicationContext(),"Por favor introduzca Email",Toast.LENGTH_LONG).show();
-            return false;
-        }else{
-            return true;
-        }
-    }
-
-
-
-    public void recuperarContraseña() {
-        mApiService.recuperarPass(binding.editTextUser.getText().toString(), 20171010).enqueue(new Callback<GeneralResponseLogin>() {
-            @Override
-            public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
-                if(response.isSuccessful()) {
-                    if(response.body().getSuccess() == 1){
-                        Toast.makeText(getApplicationContext(),"Se ha enviado un email",Toast.LENGTH_LONG).show();
-                    }else{
-                        Toast.makeText(getApplicationContext(),"Email no registrado",Toast.LENGTH_LONG).show();
-                    }
-                }else{
-                    Log.i("ingresarSolicitud ERROR", "post submitted to API." + response.body().toString());
-                }
-
-            }
-
-            @Override
-            public void onFailure(Call<GeneralResponseLogin> call, Throwable t) {
-                Log.e("ingresarSolicitud FAIL", "Unable to submit post to API.");
-
-            }
-        });
-    }
-
 
 }

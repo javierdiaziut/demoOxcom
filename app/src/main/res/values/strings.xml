@@ -81,4 +81,8 @@
     <string name="roche_2018">2018 Roche Chile Ltda</string>
     <string name="roche_text">La información incluida en esta sección y en el\nresto de esta aplicación,
     es exclusiva para\nProfesionales de la Salud</string>
+
+    <!--Recuperar contraseñna -->
+    <string name="title_recuperar_contrasena">Recuperar\nContraseña</string>
+    <string name="btn_recuperar">Recuperar</string>
 </resources>

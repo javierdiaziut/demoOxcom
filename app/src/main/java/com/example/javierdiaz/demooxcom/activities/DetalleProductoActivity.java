@@ -32,7 +32,7 @@ public class DetalleProductoActivity extends BaseActivity {
 
         updateDataScreen(mGrados.get(0));
         binding.textViewMainTitle.setText(mSelectedProblema);
-        binding.includedAppBarTitle.textViewProductos.setText(mSelectedMedicina);
+        binding.includedAppBarTitle.textViewTitle.setText(mSelectedMedicina);
         binding.btnGrade1.setOnClickListener(mOnClickListenerGrade1);
         binding.btnGrade2.setOnClickListener(mOnClickListenerGrade2);
         binding.btnGrade3.setOnClickListener(mOnClickListenerGrade3);
@@ -90,9 +90,7 @@ public class DetalleProductoActivity extends BaseActivity {
                 onBackPressed();
             }
         });
-
-        binding.includedAppBarTitle.btnBack.setOnClickListener(new View.OnClickListener() {
-
+        binding.includedAppBarTitle.textViewTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();
