@@ -12,6 +12,7 @@ import com.example.javierdiaz.demooxcom.beans.DatosApp;
 import com.example.javierdiaz.demooxcom.beans.GeneralRequestResponse;
 import com.example.javierdiaz.demooxcom.beans.GeneralResponseLogin;
 import com.example.javierdiaz.demooxcom.beans.LoginBean;
+import com.example.javierdiaz.demooxcom.beans.UsuarioBean;
 import com.example.javierdiaz.demooxcom.databinding.ActivityLogInBinding;
 import com.example.javierdiaz.demooxcom.interfaces.APIService;
 import com.example.javierdiaz.demooxcom.retrofit.ApiUtils;
@@ -47,12 +48,12 @@ public class LoginActivity extends BaseActivity {
         binding.buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                  navigateToActivity(GuiaEfectosAdversosActivity.class);
-//                if(validateFileds()){
-//                    LoginBean mLoginBean = new LoginBean(binding.editTextUser.getText().toString(),
-//                            binding.editTextPassword.getText().toString(),20171010);
-//                    sendPost(mLoginBean);
-//                }
+                  //navigateToActivity(GuiaEfectosAdversosActivity.class);
+                if(validateFileds()){
+                    LoginBean mLoginBean = new LoginBean(binding.editTextUser.getText().toString(),
+                            binding.editTextPassword.getText().toString(),20171010);
+                    sendPost(mLoginBean);
+                }
 
             }
         });
@@ -96,6 +97,15 @@ public class LoginActivity extends BaseActivity {
                 if(response.isSuccessful()) {
                     Log.i("LOGIN SUCCESS", "post submitted to API." + response.body().toString());
                     if(response.body().getSuccess() == 1){
+                        mUsuarioBean = new UsuarioBean();
+                        if (response.body().getNombre() != null)
+                            mUsuarioBean.setNombre(response.body().getNombre());
+                        if (response.body().getApellido() != null)
+                            mUsuarioBean.setApellido(response.body().getApellido());
+                        if(response.body().getEmail() != null)
+                            mUsuarioBean.setEmail(response.body().getEmail());
+                        if(response.body().getRut() != null)
+                            mUsuarioBean.setRut(response.body().getRut());
                         navigateToActivity(GuiaEfectosAdversosActivity.class);
                     }else{
                         Toast.makeText(getApplicationContext(),"Usuario no registrado",Toast.LENGTH_LONG).show();

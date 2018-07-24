@@ -1,12 +1,11 @@
 package com.example.javierdiaz.demooxcom.beans;
 
 /**
- * Created by SinAsignarT1 on 19/12/2017.
+ * Created by Javier on 24/07/2018.
  */
 
-public class GeneralResponseLogin {
-    private int success;
-    private String error;
+public class UsuarioBean {
+
     private int id_usuario;
     private String nombre;
     private String apellido;
@@ -53,19 +52,4 @@ public class GeneralResponseLogin {
         this.email = email;
     }
 
-    public int getSuccess() {
-        return success;
-    }
-
-    public void setSuccess(int success) {
-        this.success = success;
-    }
-
-    public String getError() {
-        return error;
-    }
-
-    public void setError(String error) {
-        this.error = error;
-    }
 }

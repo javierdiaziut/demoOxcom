@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.example.javierdiaz.demooxcom.R;
 import com.example.javierdiaz.demooxcom.beans.EfectoAdverso;
 import com.example.javierdiaz.demooxcom.beans.Productos;
+import com.example.javierdiaz.demooxcom.beans.UsuarioBean;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -34,6 +35,7 @@ public class BaseActivity extends AppCompatActivity {
     protected static String mSelectedMedicina;
     protected static Productos mSelectedProducto;
     protected static String imageToLoad;
+    protected static UsuarioBean mUsuarioBean;
 
 
     /**
@@ -110,7 +112,7 @@ public class BaseActivity extends AppCompatActivity {
     public void sendEmail(String email, String subject, String body) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_EMAIL, email);
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[] { email });
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
         intent.putExtra(Intent.EXTRA_TEXT, body);
         //intent.setPackage("com.google.android.gm");

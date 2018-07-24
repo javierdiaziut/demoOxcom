@@ -64,17 +64,11 @@
     <!--Perfil de Usuario -->
     <string name="subject_solicitud_soporte">Solicitud de Soporte</string>
     <string name="dummie_email_body">
-        Nombre: JAVIER PRADO\n
-        Rut: 15780437-5\n
-        Ingrese su mensaje:\n\n\n\n
-        Javier Prado Echeverria\n
-        Cel: 9 072 68 82
+        Ingrese su mensaje:\n\n
     </string>
     <string name="subject_reporte_evento">Reporte Evento Adverso</string>
     <string name="dummie_email_reporte">
-        Ingrese evento a reportar:\n\n\n\n
-        Javier Prado Echeverria\n
-        Cel: 9 072 68 82
+        Ingrese evento a reportar:\n\n
     </string>
 
     <string name="politicas_privacidad"><u>Politicas de Privacidad</u>.</string>

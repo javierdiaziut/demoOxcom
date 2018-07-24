@@ -53,8 +53,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"
             android:textAllCaps="true"
-            android:textSize="18sp"
-            android:text="Javier Prado"/>
+            android:textSize="18sp"/>
         <TextView
             android:id="@+id/tag_email"
             android:layout_width="wrap_content"
@@ -73,8 +72,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"
             android:textAllCaps="true"
-            android:textSize="18sp"
-            android:text="javier@oxcom.cl"/>
+            android:textSize="18sp"/>
 
         <Button
             android:id="@+id/buttonSolicitarSoporte"
