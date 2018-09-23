@@ -95,7 +95,7 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onResponse(Call<GeneralResponseLogin> call, Response<GeneralResponseLogin> response) {
                 if(response.isSuccessful()) {
-                    Log.i("LOGIN SUCCESS", "post submitted to API." + response.body().toString());
+                    //Log.i("LOGIN SUCCESS", "post submitted to API." + response.body().toString());
                     if(response.body().getSuccess() == 1){
                         mUsuarioBean = new UsuarioBean();
                         if (response.body().getNombre() != null)
@@ -111,7 +111,7 @@ public class LoginActivity extends BaseActivity {
                         Toast.makeText(getApplicationContext(),"Usuario no registrado",Toast.LENGTH_LONG).show();
                     }
                 }else{
-                    Log.i("LOGIN ERROR", "post submitted to API." + response.body().toString());
+                    //Log.i("LOGIN ERROR", "post submitted to API." + response.body().toString());
                 }
 
             }
@@ -129,21 +129,21 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onResponse(Call<GeneralRequestResponse> call, Response<GeneralRequestResponse> response) {
                 if(response.isSuccessful()) {
-                    Log.i("GETULTIMA SUCCESS", "post submitted to API." + response.body().toString());
+                    //Log.i("GETULTIMA SUCCESS", "post submitted to API." + response.body().toString());
                     if(response.body().getSuccess() == 1){
                         getJsonFromURL(response.body().getUrl());
                     }else{
                         Toast.makeText(getApplicationContext(),"Usuario no registrado",Toast.LENGTH_LONG).show();
                     }
                 }else{
-                    Log.i("GETULTIMA ERROR", "post submitted to API." + response.body().toString());
+                    //Log.i("GETULTIMA ERROR", "post submitted to API." + response.body().toString());
                 }
 
             }
 
             @Override
             public void onFailure(Call<GeneralRequestResponse> call, Throwable t) {
-                Log.i("GETULTIMA FAIL", "Unable to submit post to API.");
+                //Log.i("GETULTIMA FAIL", "Unable to submit post to API.");
 
             }
         });
@@ -154,27 +154,27 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
                 if(response.isSuccessful()) {
-                    Log.i("getJsonFromUrl SUCCESS", "post submitted to API." + response.body().toString());
+                    //Log.i("getJsonFromUrl SUCCESS", "post submitted to API." + response.body().toString());
                     try {
                         JSONObject obj = new JSONObject(response.body().toString());
 
                         Gson gson = new Gson();
                         Type listType = new TypeToken<DatosApp>(){}.getType();
                         mDatosApp = gson.fromJson(obj.toString(), listType);
-                        Log.i("datosapp", mDatosApp.toString());
+                        //Log.i("datosapp", mDatosApp.toString());
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
 
                 }else{
-                    Log.i("getJsonFromUrl ERROR", "post submitted to API.");
+                    //Log.i("getJsonFromUrl ERROR", "post submitted to API.");
                 }
 
             }
 
             @Override
             public void onFailure(Call<JsonObject> call, Throwable t) {
-                Log.i("getJsonFromUrl FAIL", "Unable to submit post to API.");
+                //Log.i("getJsonFromUrl FAIL", "Unable to submit post to API.");
 
             }
         });

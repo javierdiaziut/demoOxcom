@@ -90,14 +90,14 @@ public class SolicitarAccesoActivity extends BaseActivity{
 
                     }
                 }else{
-                    Log.i("ingresarSolicitud ERROR", "post submitted to API." + response.body().toString());
+                    //Log.i("ingresarSolicitud ERROR", "post submitted to API." + response.body().toString());
                 }
 
             }
 
             @Override
             public void onFailure(Call<GeneralResponseLogin> call, Throwable t) {
-                Log.e("ingresarSolicitud FAIL", "Unable to submit post to API.");
+                //Log.e("ingresarSolicitud FAIL", "Unable to submit post to API.");
 
             }
         });
